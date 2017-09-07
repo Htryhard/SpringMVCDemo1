@@ -25,6 +25,18 @@
     <!--&lt;!&ndash;配置annotation类型的处理适配器&ndash;&gt;-->
     <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/>-->
 
+    <!--文件上传配置-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--上传文件大小限制，单位为10MB-->
+        <property name="maxUploadSize">
+            <value>10485760</value>
+        </property>
+        <!--请求的编码，必须和页面编码一直-->
+        <property name="defaultEncoding">
+            <value>UTF-8</value>
+        </property>
+    </bean>
+
     <!--视图解析器-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--前缀-->

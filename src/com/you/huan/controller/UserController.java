@@ -58,8 +58,8 @@ public class UserController {
     ) {
         logger.info("登录账号：" + phone + "  密码" + password);
         for (User user : userList) {
-            if (user.getPhone().equals(phone) && user.getPassword().equals(password)){
-                model.addAttribute("user",user);
+            if (user.getPhone().equals(phone) && user.getPassword().equals(password)) {
+                model.addAttribute("user", user);
                 return "welcome";
             }
         }
