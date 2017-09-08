@@ -6,9 +6,24 @@ import java.io.Serializable;
  * user域对象
  */
 public class User implements Serializable {
+    private Integer id;
     private String phone;
     private String password;
     private String name;
+
+    public User(String phone,String password,String name){
+        this.phone = phone;
+        this.password = password;
+        this.name = name;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getPhone() {
         return phone;
