@@ -44,7 +44,7 @@ public class HelloController{
         logger.info("handleRequest 被调用啦！");
         ModelAndView view = new ModelAndView();
         view.addObject("message","Hello JavaEE World!");
-        view.setViewName("/WEB-INF/views/welcome.jsp");
+        view.setViewName("welcome");
         return view;
     }
 

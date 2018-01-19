@@ -11,6 +11,7 @@ import java.io.File;
 import java.io.IOException;
 
 @Controller
+@RequestMapping(value = "/FileUpload")
 public class FileUploadController {
 
     @RequestMapping(value = "/upload", method = RequestMethod.POST)

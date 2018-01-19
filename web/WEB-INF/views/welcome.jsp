@@ -12,5 +12,6 @@
 </head>
 <body>
 <p><h1>亲爱的[${requestScope.user.name}]召唤师，欢迎来到归来联盟！</h1></p>
+<p><h2>${requestScope.message}</h2></p>
 </body>
 </html>
